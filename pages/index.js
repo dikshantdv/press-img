@@ -3,7 +3,7 @@ import ImageUploader from "../components/ImageUploader";
 import { useEffect, useState } from "react";
 import ImageList from "../components/ImageList";
 import byPercent from "../utils/byPercent";
-import downloadZip from "../utils/DownloadZip";
+import downloadZip from "../utils/downloadZip";
 
 export default function Home() {
   const [selectedFiles, setSelectedFiles] = useState(null);
