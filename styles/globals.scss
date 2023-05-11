@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$green-primary:#48a9a6;
+$form-range-track-bg: #212d40;
+$form-range-thumb-bg:$green-primary;
+$form-range-thumb-active-bg: tint-color($form-range-thumb-bg, 70%);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+body{
+    background-color: #11151c;
+    @media (min-width: 1024px) {  background-color: rgb(72, 169, 166); }
+}
+
+.text-scss {
+    font-size:14px;
+    @media (min-width: 1024px) {font-size: 18px; }
+}
+// #262730
+
+// ::-webkit-scrollbar {
+//     width: 8px;
+//     height: 8px;
+//   }
+  
+//   /* Track */
+//   ::-webkit-scrollbar-track {
+//     background: #f1f1f1;
+//   }
+  
+//   /* Handle */
+//   ::-webkit-scrollbar-thumb {
+//     background: #3a3c49;
+//     border-radius: 15px;
+//   }
+  
+//   /* Handle on hover */
+//   ::-webkit-scrollbar-thumb:hover {
+//     background:  #262730}
