@@ -62,7 +62,7 @@ function ImageUploader({ setSelectedFiles, rounded, selectedFiles }) {
           ? "Drop the Images here ..."
           : "Drop Images here to start compression"}
       </p>
-      <p className="text-white px-4 py-2 bg-[#48a9a6] rounded-lg">
+      <p className="text-white px-4 py-2 bg-[#48a9a6] rounded-lg cursor-pointer">
         or click here to browse
       </p>
     </div>
