@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import ImageList from "../components/ImageList";
 import byPercent from "../utils/byPercent";
 import downloadZip from "../utils/downloadZip";
+import FeaturesTab from "../components/FeaturesTab";
 
 export default function Home() {
   const [selectedFiles, setSelectedFiles] = useState(null);
@@ -35,6 +36,9 @@ export default function Home() {
   return (
     <div className="lg:m-12 bg-[#11151c]">
       <div className=" h-20 bg-white"> ads</div>
+      <h1 className="text-white font-bold text-3xl text-center mt-2">
+        Compress Image
+      </h1>
       <div className="p-8">
         {selectedFiles && compressedFiles ? (
           <ImageList
@@ -108,6 +112,7 @@ export default function Home() {
           )}
         </div>
       </div>
+      <FeaturesTab />
     </div>
   );
 }
